@@ -27,16 +27,22 @@ public class UserData {
     @Enumerated(EnumType.STRING)
     @Column(name = "user_type", nullable = false)
     private UserType userType;
+
     @Column
     private String firstname;
+
     @Column
     private String lastname;
+
     @Column
     private String companyName;
+
     @Column
     private String companyCode;
+
     @Column
     private String vatNumber;
+
     @Column
     private String address;
 
@@ -50,7 +56,10 @@ public class UserData {
     @Column(name = "postal_code")
     private String postalCode;
 
+    @Column
     private String phone;
+
+    @Column
     private LocalDate birthDate;
 
     @Column(name = "parent_legal_id")
@@ -67,6 +76,7 @@ public class UserData {
 
     @Column(name = "created_at", updatable = false)
     private LocalDateTime createdAt = LocalDateTime.now();
+
     @Column
     private LocalDateTime updatedAt = LocalDateTime.now();
 }

@@ -19,7 +19,6 @@ public class UserRelation {
     @Column(name = "private_id")
     private Long privateId;
 
-    // === RYŠIAI SU USER (neprivaloma, bet patogu) ===
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "legal_id", insertable = false, updatable = false)
     private User legalUser;
@@ -28,7 +27,6 @@ public class UserRelation {
     @JoinColumn(name = "private_id", insertable = false, updatable = false)
     private User privateUser;
 
-    // === KITI LAUKAI ===
     @Column(name = "role_id", nullable = false)
     private Long roleId;
 

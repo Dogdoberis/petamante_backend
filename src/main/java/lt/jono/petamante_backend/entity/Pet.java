@@ -5,8 +5,7 @@ import lombok.*;
 import lt.jono.petamante_backend.entity.enums.AdoptionStatus;
 import lt.jono.petamante_backend.entity.enums.DeactivationReason;
 
-import lt.jono.petamante_backend.entity.HealthRecord;
-import lt.jono.petamante_backend.entity.Listing;
+
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;

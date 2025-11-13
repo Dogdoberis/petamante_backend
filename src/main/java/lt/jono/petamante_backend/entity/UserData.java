@@ -43,8 +43,15 @@ public class UserData {
     @Column
     private String vatNumber;
 
-    @Column
-    private String address;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "street_id")
+    private Street street;
+
+    @Column(name = "house_number", length = 20)
+    private String houseNumber; // "10", "10-15", "10A"
+
+    @Column(name = "apartment", length = 10)
+    private String apartment; // "15", "B"
 
 
     @Column(name = "country_id")

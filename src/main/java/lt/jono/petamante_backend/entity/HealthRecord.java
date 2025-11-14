@@ -37,6 +37,10 @@ public class HealthRecord {
     @JoinColumn(name = "clinic_id")
     private User clinic;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "treatment_plan_id", nullable = false)
+    private TreatmentPlan treatmentPlan;
+
     @Column(name = "created_at", updatable = false)
     private LocalDateTime createdAt = LocalDateTime.now();
 

@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
         scanBasePackages = {
                 "lt.jono.petamante_backend",
                 "lt.jono.petamante_backend.entity",
-//                "lt.jono.petamante_backend.repository"
+                "lt.jono.petamante_backend.repository"
         }
 )
 
